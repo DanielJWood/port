@@ -52,13 +52,13 @@ p {
 
 #container {
 	width: 300px;
-	margin: -190px 0 0 -150px;
+	margin: -160px 0 0 -150px;
 	top:50%;
 	left: 50%;
 	position: fixed;
 	padding-bottom:10px;
 	text-align: center;
-	
+
 	/*background-color: rgba(240,240,240,.2);
 	-moz-box-shadow: 0 0 5px 5px #888;
 	-webkit-box-shadow: 0 0 5px 5px#888;
