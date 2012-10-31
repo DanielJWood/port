@@ -1,0 +1,65 @@
+/*Reset CSS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, table, caption, tbody, 
+tfoot, thead, tr, th, td, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html { font-size: 62.5%; overflow-y: scroll; }
+
+body { /*background-image: url(images/bg.png);*/  font-weight: 400; font-family: "Julius Sans One", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;  color:#303030;
+ letter-spacing: 1px; -webkit-font-smoothing: antialiased; }
+
+#map { position:absolute; top:0; bottom:0; width:100%; }
+
+
+/* Preset Typography*/
+
+h1
+{font-size:70px;
+color:#505050;
+}
+
+h2 {
+	font-size: 30px
+}
+
+p {
+	font-size: 15px
+}
+
+/*Divs*/
+
+#container {
+	width: 300px;
+	margin: -190px 0 0 -150px;
+	top:50%;
+	left: 50%;
+	position: fixed;
+	padding-bottom:10px;
+	text-align: center;
+	/*background-color: rgba(240,240,240,.2);
+	-moz-box-shadow: 0 0 5px 5px #888;
+	-webkit-box-shadow: 0 0 5px 5px#888;
+	box-shadow: 0 0 5px 5px #888;*/
+}
