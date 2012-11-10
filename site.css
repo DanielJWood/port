@@ -27,7 +27,7 @@ table {
 
 html { font-size: 62.5%; overflow-y: scroll; }
 
-body { /*background-image: url(images/bg.png);*/  font-weight: 400; font-family: "Julius Sans One", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;  color:#303030;
+body { background-color:rgb(242,242,242); font-weight: 400; font-family: "Julius Sans One", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;  color:#303030;
  letter-spacing: 1px; -webkit-font-smoothing: antialiased; }
 
 #map { position:absolute; top:0; bottom:0; width:100%; }
