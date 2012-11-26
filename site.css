@@ -28,7 +28,7 @@ table {
 html { font-size: 62.5%; overflow-y: scroll; }
 
 body { background-color:rgb(242,242,242); font-weight: 400; font-family: "Julius Sans One", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;  color:#303030;
- letter-spacing: 1px; -webkit-font-smoothing: antialiased; }
+ letter-spacing: 1px; -webkit-font-smoothing: antialiased; color:#505050;}
 
 #map { position:absolute; top:0; bottom:0; width:100%; }
 
@@ -50,32 +50,98 @@ p {
 
 /*Divs*/
 
-#container {
+#landing.active #container {
+	left: 50%;
+}
+
+#landing #container {
 	width: 300px;
 	margin: -160px 0 0 -150px;
 	top:50%;
-	left: 50%;
+	left: -50%;
 	position: fixed;
 	padding-bottom:10px;
 	text-align: center;
-
-	/*background-color: rgba(240,240,240,.2);
-	-moz-box-shadow: 0 0 5px 5px #888;
-	-webkit-box-shadow: 0 0 5px 5px#888;
-	box-shadow: 0 0 5px 5px #888;*/
+	 -moz-transition: left 0.3s ease;
+  	-o-transition: left 0.3s ease;
+  	-webkit-transition: left 0.3s ease;
+  	transition: left 0.3s ease;
 }
+
+#landing.active #nav_container {left:50%;}
 
 #nav_container {
-	position:fixed;
-	width:190px;
+	position:absolute;
+	width:170px;
 	bottom:50%;
-	left:50%;
-	margin: -100px 0 -180px -100px;
-	display: inline;
-
+	left:-50%;
+	margin: -100px 0 -180px -90px;
+	 -moz-transition: left 0.3s ease;
+  	-o-transition: left 0.3s ease;
+  	-webkit-transition: left 0.3s ease;
+  	transition: left 0.3s ease;
 }
 
-/*Tristen's code for icons*/
+/*=================================
+			switch Tab
+===================================*/
+#portfolio.active {
+	left:50%;
+}
+
+#portfolio {
+	width: 600px;
+	margin: 0 0 0 -300px;
+	top:10%;
+	left:-50%;
+	position: fixed;
+	padding-bottom:10px;
+	text-align: center;
+		 -moz-transition: left 0.3s ease;
+  	-o-transition: left 0.3s ease;
+  	-webkit-transition: left 0.3s ease;
+  	transition: left 0.3s ease;
+}
+
+#resume.active {
+	left:50%;
+}
+
+#resume {
+	width: 600px;
+	margin: 0 0 0 -300px;
+	top:10%;
+	left:-35%;
+	position: fixed;
+	padding-bottom:10px;
+	text-align: center;
+		 -moz-transition: left 0.3s ease;
+  	-o-transition: left 0.3s ease;
+  	-webkit-transition: left 0.3s ease;
+  	transition: left 0.3s ease;
+}
+
+#bio.active {
+	left:50%;
+}
+
+#bio {
+	width: 600px;
+	margin: 0 0 0 -300px;
+	top:10%;
+	left:-50%;
+	position: fixed;
+	padding-bottom:10px;
+	text-align: center;
+		 -moz-transition: left 0.3s ease;
+  	-o-transition: left 0.3s ease;
+  	-webkit-transition: left 0.3s ease;
+  	transition: left 0.3s ease;
+}
+
+/************************
+Tristen's code for icons
+*************************/
 
  .icon {
   width:40px;
@@ -83,16 +149,95 @@ p {
   float:left;
   display:block;
   text-indent:-999em;
-  margin-left:20px	;
+  margin-left:20px;
   }
 
-.icon.contact {  background:transparent url(img/email.png) no-repeat 0 0;
-}
+.icon.contact {  background:transparent url(img/email.png) no-repeat 0 0; }
 .icon.contact:hover { background:transparent url(img/mailiconhover.png) no-repeat 0 0;}
 
  
 .icon.github {  background:transparent url(img/github.png) no-repeat 0 0;}
 .icon.github:hover {  background:transparent url(img/githubhover.png) no-repeat 0 0;}
 
-.icon.twitter {background:transparent url(img/twitter.png) no-repeat 0 0;}
-.icon.twitter:hover {background:transparent url(img/twitterhover.png) no-repeat 0 0;}
+.icon.twitter {background:transparent url(img/twitter.png) no-repeat 0 0; margin-left: 0px;}
+.icon.twitter:hover {background:transparent url(img/twitterhover.png) no-repeat 0 0; margin-left: 0px;}
+
+/*Layerswitcher*/
+#links-container {
+  position:absolute;
+  height:40px;
+  bottom:30px;
+  left:50%;	
+  margin:0px 0px 0px -250px;
+}
+
+.layerswitcher li {
+ position:relative;
+ width:200px;
+ float:left;
+ padding-top:10px;
+ padding-bottom:0px;
+}
+
+.layerswitcher a {
+  display: block;
+  text-decoration: none;
+    text-align:center;
+    position:relative;
+    height:59%;
+    width:77px;
+    background- color:transparent;
+    padding-top:9px;
+    padding-bottom:9px;
+    color:rgb(80,80,80);
+    color:rgba(80,80,80,1);
+      -webkit-border-radius: 3px;
+   border-top-left-radius: 3px;
+   border-top-right-radius: 3px;
+   border-bottom-right-radius: 3px;
+   border-bottom-left-radius: 3px;
+  }
+
+.layerswitcher a:hover {
+  -webkit-border-radius: 3px;
+   border-top-left-radius: 3px;
+   border-top-right-radius: 3px;
+   border-bottom-right-radius: 3px;
+   border-bottom-left-radius: 3px;
+   -moz-box-shadow:  0px 0px 3px 4px #888;
+   -webkit-box-shadow: 0px 3px 4px #888;
+   box-shadow: 0px 0px 3px 2px #888;  
+  }
+  
+.layerswitcher a.active {
+background-color:rgb(200,200,200);
+    color:rgb(80,80,80);
+    color:rgba(80,80,80,1);
+    border:none;
+
+}
+
+#home-link {
+  width: 100px;
+  background-color: transparent;
+   -webkit-border-radius: 3px;
+   border-top-left-radius: 0px;
+   border-top-right-radius: 0px;
+   border-bottom-right-radius: 3px;
+   border-bottom-left-radius: 3px;
+}
+
+ #home {
+  position:absolute;
+  top:0px;
+  left:50%; 
+  margin:0px 0px 0px -56px;
+       -moz-transition: left 0.3s ease;
+    -o-transition: left 0.3s ease;
+    -webkit-transition: left 0.3s ease;
+    transition: left 0.3s ease;  
+ }
+
+#home.active {
+  left:50%  ;
+}
