@@ -1,0 +1,5 @@
+        map.ease.location({ lat: -2.943, lon: -81.801 }).zoom(8).optimal();
+         map.ease.location({ lat: 9.6664, lon: -71.5066 }).zoom(11).optimal();
+        map.ease.location({ lat: 0.546 , lon: 21.456 }).zoom(8).optimal();
+         map.ease.location({ lat: 29.1506, lon: -89.4243}).zoom(11).optimal();
+         map.ease.location({ lat: 48.444, lon: -129.595}).zoom(7).optimal();

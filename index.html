@@ -8,14 +8,15 @@
 	
 	<link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" media="all" href="site.css" />
-
 </head>
 
 <body>
 	<div id='map'></div>
 	<div id="landing" class="active">
-		<div id="container">
+		<div id="title">
 			<h1>Daniel Wood</h1>
+        </div>
+        <div id="container">
 			<h2>Cartographer</h2>
 			<h2>Web Developer</h2>
 			<p>Washington, DC<br><br>
@@ -30,26 +31,39 @@
 
     <div id='links-container'>
         <ul class='layerswitcher'>
-           <li><a class="port-link"href='#port'>Portfolio</a></li>
-           <li><a class="res-link"href='#'>Resume</a></li>
-           <li><a class="bio-link"href='#'>Bio</a></li>
+           <li><a class="port-link" href='#port'>Portfolio</a></li>
+           <!--<li><a class="res-link"href='#'>Resume</a></li>-->
+           <li><a class="bio-link" href='#'>Bio</a></li>
         </ul>
     </div>
     <div id='home' class='layerswitcher'><a id="home-link" class='active' href='#'>Take Me Home</a></div>
 
     <div id="portfolio" class=''>
     	<h1>Portfolio</h1>
-    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi massa lorem, feugiat non hendrerit at, ultrices vestibulum metus. Duis bibendum nibh non leo consectetur at tempor massa facilisis. Mauris convallis nulla eget dui venenatis a interdum odio mollis. Curabitur sit amet eros orci, bibendum vehicula nulla. Praesent rutrum dignissim cursus. Duis eget tortor nec lacus ultricies feugiat vitae et leo. Fusce blandit lorem quis enim pharetra porttitor. Donec pharetra pellentesque arcu.</p>
+    	<div id="i1"><a href="http://danieljwood.github.com/DC-crime/index.html"><img class="image" src="img/crime.jpg"></a><p>Crime Map of Washington, DC</p></div>
+        <div id="i2"><a href="http://dl.dropbox.com/u/26623888/Atlas/USA-poverty.jpg"><img class="image"  src="img/atlas.jpg"></a><p>Map made using US Census Bureau data</p></div>
+        <div id="i3"><img class="image"  src="img/arms.jpg"><p>Flow of global arms trade to human rights violating countries</p></div>
+        <div id="i4"><a href="http://dashboard.citivox.com/yemen"><img class="image"  src="img/citivox.jpg"></a>
+            <p>Election Violations reported via mobile phone in Yemen</p>
+        </div>
     </div>
-
+<!--
     <div id="resume" class=''>
     	<h1>Resume</h1>
     	<p>Aliquam gravida urna non nisi faucibus sit amet viverra metus euismod. Morbi sed nunc quam, sit amet cursus sapien. Morbi feugiat facilisis nunc, id venenatis tortor ultricies sit amet. Duis interdum, neque egestas imperdiet commodo, justo nisi rutrum justo, a fermentum velit enim id ante. Mauris magna purus, tincidunt vitae dictum non, condimentum non nisi. Ut dictum, neque congue consectetur eleifend, lorem ante pulvinar purus, interdum fermentum tortor lacus in enim. In sit amet quam metus.</p>
     </div>
-
+-->
     <div id="bio" class=''>
     	<h1>Bio</h1>
-    	<p>Etiam ultrices pellentesque orci ut sollicitudin. Fusce sed lacus vel odio pellentesque hendrerit vitae et risus. Vestibulum id fermentum metus. In est mauris, fermentum eget sodales non, ultrices nec lorem. Morbi auctor varius malesuada. Etiam mattis sagittis dolor vel pellentesque. Pellentesque semper tristique nisl, non vehicula erat sodales eu.</p>
+    	<p>Dan has had a life-long love of maps. From an early age it wasn't unusual to find him perusing an atlas for hours on end or passing a long car journey by studying the road map. When given the opportunity to make maps for a summer with the Park Service in Yellowstone, he jumped at it. In terms of mapping, he hasn't looked back since. </p>
+<br>
+<p>At Mapbox, Dan helped process several hundred thousand records from the Census Bureau and added about that many points to <a href="http://www.openstreetmap.org/user/Dan%20Wood">Open Street Map</a> all over the globe. He boned up on his Mapbox JS skills through the help of his genius colleagues and played a few fooseball games too.</p>
+<br>
+<p>Since then, Dan has helped add mapping capacity to Amnesty International USA and worked on a few projects of his own, some serious, and some <a href="http://danieljwood.github.com/flintstone/index.html">nonsense</a>. At Edelman, Inc. Dan has had the privilege to learn from talented developers and program managers, working in equal parts between the two positions.</p>
+<br>
+<p>In his free time, Dan is an avid whistler and bicyclist, spending most of his free time doing one or both. Dan likes his bacon medium rare, which he recognizes is unpopular, but he owns, fully.</p>
+<br>
+<p>Specialties:  MapboxJs, Tilemill, LeafletJS, QGIS, GDAL, SQL (SQLite, PostgreSQL, PostGIS), Inkscape</p>
     </div>
 
     <script src='jquery.js' type='text/javascript'></script>

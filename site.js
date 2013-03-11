@@ -15,6 +15,7 @@ $(document).ready(function() {
          $('#landing').removeClass('active');
          $('#resume').removeClass('active');
          $('#bio').removeClass('active');
+         map.ease.location({ lat: 48.669, lon: -146.239}).zoom(5).optimal();
      });
 
   $('.res-link').click(function (e) {
@@ -28,6 +29,8 @@ $(document).ready(function() {
          $('#landing').removeClass('active');
          $('#portfolio').removeClass('active');
          $('#bio').removeClass('active');
+        map.ease.location({ lat: -2.943, lon: -81.801 }).zoom(5).optimal();
+
      });
 
   $('.bio-link').click(function (e) {
@@ -41,6 +44,8 @@ $(document).ready(function() {
          $('#landing').removeClass('active');
          $('#portfolio').removeClass('active');
          $('#resume').removeClass('active');
+      //  map.ease.location({ lat: 0.546 , lon: 21.456 }).zoom(5).optimal();
+        map.ease.location({ lat: -2.943, lon: -82.801 }).zoom(8).optimal();
 
      });
 
@@ -55,5 +60,7 @@ $(document).ready(function() {
          $('#bio').removeClass('active');
          $('#portfolio').removeClass('active');
          $('#resume').removeClass('active');
+                  map.ease.location({ lat:37.389, lon: -57.949}).zoom(5).optimal();
+
      });
 });
