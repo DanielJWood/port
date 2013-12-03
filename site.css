@@ -197,7 +197,7 @@ Tristen's code for icons
   height:40px;
   bottom:30px;
   left:50%;	
-  margin:0px 0px 0px -125px;
+  margin:0px 0px 0px -115px;
 }
 
 .layerswitcher li {
@@ -206,6 +206,7 @@ Tristen's code for icons
  float:left;
  padding-top:10px;
  padding-bottom:0px;
+ z-index: 20;
 }
 
 .layerswitcher a {
