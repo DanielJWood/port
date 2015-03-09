@@ -62,7 +62,7 @@ $(document).ready(function() {
             i = 1;
             myLoop();
           }                        
-       }, 300)
+       }, 20000)
     }
 
     myLoop();       
