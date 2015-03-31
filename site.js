@@ -68,7 +68,7 @@ $(document).ready(function() {
     myLoop();       
 
     function moveit (i) {
-        console.log(i)
+        // console.log(i)
         map.ease.location({ lat: data[i].lat, lon: data[i].long }).zoom(data[i].zoom).optimal();        
     }
 
